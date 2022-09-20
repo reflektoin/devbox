@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "mysql"
+  ],
+  "shell": {
+    "init_hook": [
+      ". ./shell.sh"
+    ]
+  }
+}

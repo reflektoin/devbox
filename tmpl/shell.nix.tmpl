@@ -31,6 +31,8 @@ mkShell {
       # non-Nix programs, while still preferring the Nix ones.
       export "PATH=$PATH:$PARENT_PATH"
 
+      export MYSQL_BASEDIR="${pkgs.mariadb}"
+
       {{ if debug }}
       echo "PATH=$PATH"
       {{- end }}
